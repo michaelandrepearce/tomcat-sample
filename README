@@ -1,0 +1,15 @@
+Sample Tomcat application showing JNDI resource in tomcat context.xml for ConnectionFactory and Destination for ApacheActiveMQ
+
+To run 
+
+start Apache ActiveMQ Artemis on port 61616
+ 
+then
+
+mvn clean install tomcat7:exec-war
+
+then to send message 
+
+http://localhost:8080/tomcat-sample/send
+
+this will cause a "hello world" message to send, and the consumer should consume and output it to sysout.
